@@ -42,6 +42,6 @@ The overall RESULT for a poster is determined by the combined scores from the tw
 
 Each INSTITUTE can have one or more GROUPs registered (Cardinality: 1,N). Each GROUP is registered under exactly one INSTITUTE (Cardinality: 1,1).
 
-Each INSTITUTE is located at exactly one ADDRESS (Cardinality: 1,1). Each ADDRESS can be associated with zero to many INSTITUTEs.
+Each INSTITUTE is located at exactly one ADDRESS (Cardinality: 1,1). Each ADDRESS can be associated with one INSTITUTEs.
 
-Each ORGANIZATION is located at exactly one ADDRESS (Cardinality: 1,1). Each ADDRESS can be associated with zero to many ORGANIZATIONs.
+Each ORGANIZATION is located at exactly one ADDRESS (Cardinality: 1,1). Each ADDRESS can be associated with one ORGANIZATIONs.
