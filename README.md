@@ -45,3 +45,5 @@ Each INSTITUTE can have one or more GROUPs registered (Cardinality: 1,N). Each G
 Each INSTITUTE is located at exactly one ADDRESS (Cardinality: 1,1). Each ADDRESS can be associated with one INSTITUTEs.
 
 Each ORGANIZATION is located at exactly one ADDRESS (Cardinality: 1,1). Each ADDRESS can be associated with one ORGANIZATIONs.
+
+Each Judge belongs to exactly one ORGANIZATION. Each ORGANIZATION has one to many JUDGEs.
