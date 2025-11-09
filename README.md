@@ -9,3 +9,39 @@ You are tasked with designing a database to manage the administration of the "Da
 
 
 # Business Rules
+
+The entity STUDENT has attributes STUDENTID as primary key, NAME, TELNUM, EMAIL, and GROUPID as foreign key.
+
+The entity GROUP has attributes GROUPID as primary key, REGISTRATIONDATE, CATEGORY, MENTORID as foreign key, and INSTITUTEID as foreign key.
+
+The entity INSTITUTE has attributes INSTITUTEID as primary key, NAME, and ADDRESSID as foreign key.
+
+The entity MENTOR has attributes MENTORID as primary key, NAME, TELNUM, and INSTITUTEID as foreign key.
+
+The entity POSTER has attributes POSTERID as primary key, TITLE, DESCRIPTION, and GROUPID as foreign key.
+
+The entity JUDGE has attributes JUDGEID as primary key, NAME, EMAIL, and ORGID as foreign key.
+
+The entity ORGANIZATION has attributes ORGID as primary key, NAME, and ADDRESSID as foreign key.
+
+The entity ADDRESS has attributes ADDRESSID as primary key, STREET, CITY, POSTCODE, and STATE.
+
+The entity RESULT has attributes RESULTID as primary key, FIRSTPLACE, SECONDPLACE, THIRDPLACE, and DEFAULT.
+
+The composite entity CONTEST has attributes POSTERID and JUDGEID as both primary and foreign keys. It also has attributes TOPICCOVERAGE, GRAPHICSUSE, ORGANIZATION, LAYOUTANDDESIGN, MECHANICS, TOTALMARKS and RESULTID as foreign key.
+
+Each GROUP must have between three and four STUDENT members (Cardinality: 3,4). Each STUDENT belongs to exactly one GROUP (Cardinality: 1,1).
+
+Each MENTOR can advise zero to three GROUPs (Cardinality: 0,3). Each GROUP is advised by exactly one MENTOR (Cardinality: 1,1).
+
+Each GROUP must create exactly one POSTER (Cardinality: 1,1). Each POSTER is created by exactly one GROUP (Cardinality: 1,1).
+
+Each POSTER is evaluated by exactly two JUDGEs (Cardinality: 2,2). Each JUDGE can evaluate one to ten POSTERs (Cardinality: 1,10).
+
+The overall RESULT for a poster is determined by the combined scores from the two judges on the CONTEST entity.
+
+Each INSTITUTE can have one or more GROUPs registered (Cardinality: 1,N). Each GROUP is registered under exactly one INSTITUTE (Cardinality: 1,1).
+
+Each INSTITUTE is located at exactly one ADDRESS (Cardinality: 1,1). Each ADDRESS can be associated with zero to many INSTITUTEs.
+
+Each ORGANIZATION is located at exactly one ADDRESS (Cardinality: 1,1). Each ADDRESS can be associated with zero to many ORGANIZATIONs.
