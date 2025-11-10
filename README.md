@@ -5,7 +5,7 @@ You are tasked with designing a database to manage the administration of the "Da
 
 ## ERD
 
-<img width="927" height="599" alt="4 3 Exercises Q2 drawio" src="https://github.com/user-attachments/assets/0b950e9c-b326-41e9-a39c-97354a6160a0" />
+<img width="927" height="599" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/0e8966bc-da6f-4371-9e01-29b441b980aa" />
 
 
 # Business Rules
