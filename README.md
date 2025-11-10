@@ -16,7 +16,7 @@ The entity GROUP has attributes GROUPID as primary key, REGISTRATIONDATE, CATEGO
 
 The entity INSTITUTE has attributes INSTITUTEID as primary key, NAME, and ADDRESSID as foreign key.
 
-The entity MENTOR has attributes MENTORID as primary key, NAME, TELNUM, and INSTITUTEID as foreign key.
+The entity MENTOR has attributes MENTORID as primary key, NAME, TELNUM.
 
 The entity POSTER has attributes POSTERID as primary key, TITLE, DESCRIPTION, and GROUPID as foreign key.
 
@@ -48,4 +48,5 @@ Each ORGANIZATION is located at exactly one ADDRESS (Cardinality: 1,1). Each ADD
 
 Each JUDGE belongs to exactly one ORGANIZATION. Each ORGANIZATION has one to many JUDGEs.
 
-Each INSTITUTE has many MENTORs. Each MENTOR belongs to exactly one INSTITUTE.
+The foreign key INSTITUTEID that's supposed to be an attribute of both entity STUDENT and MENTOR was omitted because of redundancy. The INSTITUTEID of both the STUDENTs and the MENTORs can refer to the entity GROUP, which already has the foreign key INSTITUTEID.
+
